@@ -6,27 +6,89 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/c6958c3964.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/estilos/estilopersonal.css" >
     </head>
     <body>
-        <header>  
-            <h2>HOME</h2>   
+        <header class="navbar navbar-dark bg-dark">
+            <a href="index.html">
+              <i class="fas fa-home fa-2x"> My Website</i>
+            </a>
+            <ul id="navegacion">
+                <li class="nav-item">
+                  <a class=" btn btn-outline-success"  href="about.html"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class=" btn btn-outline-success"  href="contact.html"> Contact</a>
+                </li>
+            </ul>
         </header>
-        <section> 
-            <article>
-                <img src="/imagenes/personal.JPG" alt="Información personal">
-                
-                    <p>Hola, soy un joven y guapo estudiante cajamarquino cursando el ultimo año de carrera
+        <div class="container mx-auto mt-3">
+            <div class="row justify-content-md-center">
+                <div id="uno"class="col">
+                    <img src="/imagenes/personal.JPG" alt="Información personal">
+                    <p class="texto">Hola, soy un joven y guapo estudiante cajamarquino cursando el ultimo año de carrera
                     en la Universidad Nacional de Cajamarca pertenezco a la promoción 2017 en la Escuela 
                     Profesional Academica de Ingenieria de Sistemas e Informática</p>
-                
-            </article>
-            <article id="b">
-                <img src="/imagenes/Welcome.gif" alt="Bienvenida" width="300px">
-                    <p>Como creador, espero que te sientas cómodo y naveges por en mi sitio web 
+                </div>
+                <div id="dos"class="col">
+                    <img src="/imagenes/Welcome.gif" alt="Bienvenida" width="300px">
+                    <p class="texto">Como creador, espero que te sientas cómodo y naveges por en mi sitio web 
                      que aun esta en proceso de desarrollo <strong>!Gracias por entrar!</strong> </p>
+                </div>
+                <div id="tres" class="col">
+                    <img src="/imagenes/aventuras.jpg" alt="aventuras">
+                    <p class="texto"> La idea de aventura se vincula a una experiencia que acarrea ciertos riesgos y cuyo protagonista puede estar a merced de sucesos imprevisibles. Las aventuras pueden comenzar de forma 
+                    espontánea e involuntaria, sin que la persona las busque.</p>
+                </div>
+            </div>
+        </div>
+        <section id="contenido">
+            <article class="shadow-lg p-3 mb-2 bg-white rounded">
+                <h6>Welcome</h6>
+                <h2>Sobre la pagina web</h2>
+                <p id="description">Realizada a partir de lenguajes de etiquetas
+                    como html y css ademas le integracion de un framework
+                    bootstrap con ello se tendria una pagina web legible
+                    y muy creativa
+                </p>
+            </article>
+            <article>
+                <img src="/imagenes/logo.png" alt="html" class="logos">
+                <img src="/imagenes/logocss.png" alt="css" class="logos">
+                <img src="/imagenes/js.png" alt="javascript" class="logos">
+                <img src="/imagenes/boot.png" alt="bootstrap" class="logos">
             </article>
         </section>
-        <footer> <h4>(c) Ingenieria Web</h4></footer>
+        <footer class="bg-dark text-white mt-3">
+            <div class="container-fluid">
+              <div class="row">
+                <ul class="col-6 list-unstyled">
+                  <li class="font-weight-bold "> Redes Sociales</li>
+                  <li class="d-flex justify-content-around m-3">
+                    <a href="#" class="text-reset">
+                      <i class="fab fa-facebook fa-3x"></i>
+                    </a>
+                    <a href="#" class="text-reset">
+                      <i class="fab fa-twitter fa-3x"></i>
+                    </a>
+                    <a href="#" class="text-reset">
+                      <i class="fab fa-reddit fa-3x"></i>
+                    </a>
+                    <a href="#" class="text-reset">
+                      <i class="fab fa-instagram fa-3x"></i>
+                    </a>
+                  </li>
+                </ul>
+                <div class="col-6 list-unstyled pt-1">
+                  <h6 class="m-0 ">Realizado por:</h6>
+                  <span> Enrique Franco Briones Mantilla                    
+                  </span>
+                  <span> (c) Ingenieria Web</span>
+                </div>
+              </div>
+            </div>
+        </footer>
     </body>
 </html>

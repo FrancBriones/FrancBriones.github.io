@@ -6,13 +6,77 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link rel="stylesheet" href="/estilos/estilopersonal.css">
+        <script src="https://kit.fontawesome.com/c6958c3964.js" crossorigin="anonymous"></script>
     </head>
-    <body id="cuerpo">
-    <header id="contact">
-        <h2>CONTACT</h2>
-    </header>
-    <div id="datos">
+    <body>
+        <header class="navbar navbar-dark bg-dark">
+            <a href="index.html">
+              <i class="fas fa-home fa-2x"> My Website</i>
+            </a>
+            <ul id="navegacion">
+                <li class="nav-item">
+                  <a class=" btn btn-outline-danger"  href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class=" btn btn-outline-danger"  href="about.html">About</a>
+                </li>
+            </ul>
+        </header>
+        <div class="container-fluid mx-auto ">
+            <img src="/imagenes/down.jpg" alt="really" width="100%" height="400px">
+        </div>
+    <form>
+        <h3> Contacto</h3>
+        <div class="form-group row mb-1">
+            <label for="Texto" class="col-sm-2 col-form-label">Nombres:</label>
+            <div class="col-sm-5">
+                <input class="form-control" placeholder="Ingresar Nombres">
+            </div>
+            <div class="col-sm-5">
+                <input class="form-control" placeholder="Ingresar Apellidos">
+            </div>
+        </div>
+            <div class="form-group row">
+                <label for="Email" class="col-sm-2 col-form-label">Email:</label>
+                <div class="col-sm-10">
+                    <input class="form-control" placeholder="Ingresar email">
+                </div>
+            </div>
+            <div class="form-group row mt-1 mb-1">
+                <label for="Phone" class="col-sm-2 col-form-label">Telefono:</label>  
+                <div class="col-sm-3">
+                    <input class="form-control" placeholder="###">
+                </div>
+                <div class="col-sm-3 ">
+                    <input class="form-control" placeholder="###">
+                </div>
+                <div class="col-sm-3">
+                    <input class="form-control" placeholder="###">
+                </div>
+            </div>
+            <div class="form-group row" >
+                <label for="Mensaje" class="col-sm-2 col-form-label">Mensaje:</label>  
+                    <select class="custom-select col-3 ">
+                        <option selected>Tipo de Mensaje</option>
+                        <option >One</option>
+                        <option >Two</option>
+                        <option >Three</option>
+                      </select>
+                </div>
+            </div>
+            <div class="form-group row mt-1" >
+                    <label class="col-sm-2 col-form-label" >Descripción:</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control "></textarea>
+                    </div>   
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-2">Aceptar</button>
+          
+    </form> 
+    <div class="datos">
             <p>Autor, <strong>Enrique Franco Briones Mantilla</strong> de Perú, perteneciente a la provincia de Cajamarca</p>
             <ul>
                 <li> <strong>Email:</strong> ebrionesm17_1@unc.edu.pe </li>
@@ -20,14 +84,52 @@
                 <li> <strong>Address:</strong> Jr.Mayopata Mz 520</li>
             </ul>
     </div>
-        <div id="address">
-            <h4>Redes Sociales</h4>
-            <a href="https://www.facebook.com/"><img src="/imagenes/Facebook.JPG" alt="Facebook" ></a>
-            <a href="https://www.reddit.com/"><img src="/imagenes/Reddit.png" alt="Reddit" ></a>
-            <a href="https://twitter.com/"><img src="/imagenes/Twitter.png" alt="Twitter" ></a>
+        <div id="sociales">
+            <ul>
+                <li><a href="http://www.facebook.com/" target="_blank" ><i class="fab fa-facebook fa-2x" style=" color:blue;"></i></a></li>
+                <li><a href="http://www.twitter.com/" target="_blank" ><i class="fab fa-twitter fa-2x"></i></a></li>
+                <li><a href="http://www.reddit.com/" target="_blank"><i class="fab fa-reddit fa-2x" style=" color: orangered;" ></i></a></li>
+                <li><a href="http://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x" style="color:black;"></i></a></li>
+            </ul>
         </div>
     </div>
-    <footer id="final"> 
-        <h3>(c) Ingenieria Web</h3> </footer>
-    </body>
+    <footer class="bg-dark text-white mt-3 p-lg-2">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 col-md">
+                <i class="fas fa-spider fa-3x"></i>
+                <small class="d-block mb-3 text-muted"> (c)2021 </small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Privacidad</h5>
+                    <ul class="list-unstyled ">
+                        <li> Transparencia </li>
+                        <li> Minimización</li>
+                        <li> Limitación </li>
+                        <li> Confidencialidad</li>
+                    </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Terminos</h5>
+                <ul class="list-unstyled">
+                    <li>A los clientes</li>
+                    <li>Derechos</li>
+                    <li>Garantias</li>
+                    <li>Sesiones de usuario</li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Soporte</h5>
+                <ul class="list-unstyled">
+                    <li>Mantenimiento</li>
+                    <li>Actualizada</li>
+                    <li>Monitoreo</li>
+                    <li>Alojamiento</li>
+                </ul>
+
+                
+            </div>
+          </div>
+        </div>
+    </footer>
 </html>

@@ -6,34 +6,94 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link rel="stylesheet" href="/estilos/estilopersonal.css" >
+        <script src="https://kit.fontawesome.com/c6958c3964.js" crossorigin="anonymous"></script>
     </head>
-    <body class="cuerpo">
-        <header class="tema"> <h2>ABOUT</h2></header>
-        <section class="caja">
-            <article class="info">
-                <h3>Experiencial laboral</h3>
-                <p>Aun no he tenido experiencia laboral con respecto a mi carrera sin embargo 
-                ya genero mis propios ingresos a traves de pequeñas microinvsersiones en cripto 
-                y acciones de bolsa</p>
-                <img src="/imagenes/cripto.jpg" alt="Criptomonedas" class="img">
-            </article>
-            <article class="info">
-                <h3>Lugares visitados</h3>
-                <img src="/imagenes/viajes.jpg" alt="viajes por Perú"  class="img">
-                <p>He visitos lugares al interior del pais como Lima, Piura, Tumbes ademas del exterior como 
-                Ecuador son bonitas experiencias en esos lugares</p>
-            </article>
-            <article class="info">
-                <img src="/imagenes/ceviche.jpg" alt="Ceviche mixto" class="img">
-                <h3>Comidas Favoritas</h3>
-                <p>La comida es lo mejor de este planeta y uno de mis favoritos son los tallerines rojos, 
-                ceviche mixto con su camote y la parrilla acompañada de bastante ensalada</p>
-            </article>
+    <body>
+        <header class="navbar navbar-dark bg-dark">
+            <a href="index.html">
+              <i class="fas fa-home fa-2x"> My Website</i>
+            </a>
+            <ul id="navegacion">
+                <li class="nav-item">
+                  <a class=" btn btn-outline-light"  href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class=" btn btn-outline-light"  href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </header>
+        <div class="container-fluid mx-auto ">
+            <img src="/imagenes/paisajes.jpg" alt="monataña color" width="100%" height="400px">
+        </div>
+        <div class="d-inline-flex">
+            <span>Hola</span>
+        </div>
+        <section id="presentacion">
+            <div class="card" >
+                <div class="card-header bg-dark text-white">Experiencial laboral</div>
+                 <img src="/imagenes/cripto.jpg " alt="bitcoin">
+                    <div class="card-body">
+                        <p class="card-text">Aun no he tenido experiencia laboral con respecto a mi carrera sin 
+                        embargo ya genero mis propios ingresos a traves de pequeñas microinvsersiones en cripto 
+                        y acciones de bolsa</p>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-dark text-white">Lugares visitados</div>
+                <img src="/imagenes/viajes.jpg" alt="viajes por Perú">
+                <div class="card-body">
+                    <p class="card-text" >He visitos lugares al interior del pais como Lima, Piura, Tumbes ademas del exterior como 
+                    Ecuador son bonitas experiencias en esos lugares</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-dark text-white">Comidas Favoritas</div>
+                <img src="/imagenes/ceviche.jpg" alt="Ceviche mixto">
+                <div class="card-body">
+                    <p class="card-text">La comida es lo mejor de este planeta y uno de mis favoritos son los tallerines rojos, 
+                    ceviche mixto con su camote y la parrilla acompañada de bastante ensalada</p>
+                </div>
+            </div>
         </section>
-        <footer class="pie"> 
-            <h4>[Enrique Franco Briones Mantilla]</h4>
-            <h4>(c) Ingenieria Web</h4>
+        <div class="jumbotron">
+            <h1 class="display-4">Hey!</h1>
+            <p class="lead">Es muy genial realizar una pagina web ya que asi se muestra la creatividad</p>
+            <hr class="my-4">
+            <p>
+                Una página web es un documento accesible desde cualquier navegador con acceso a internet, y que puede incluir audio, vídeo, texto y sus diferentes combinaciones.
+                Se trataban de páginas estáticas, y que sólo podían ser accesibles para ser modificadas a través de código htm</p>
+            <a class="btn btn-success btn-lg" href="#" role="button">Aprender mas</a>
+        </div>
+        <footer class="bg-dark text-white mt-3">
+            <div class="container-fluid">
+              <div class="row">
+                <ul class="col-6 list-unstyled">
+                  <li class="font-weight-bold "> Redes Sociales</li>
+                  <li class="d-flex justify-content-around m-3">
+                    <a href="#" class="text-reset">
+                      <i class="fab fa-facebook fa-3x"></i>
+                    </a>
+                    <a href="#" class="text-reset">
+                      <i class="fab fa-twitter fa-3x"></i>
+                    </a>
+                    <a href="#" class="text-reset">
+                      <i class="fab fa-reddit fa-3x"></i>
+                    </a>
+                    <a href="#" class="text-reset">
+                      <i class="fab fa-instagram fa-3x"></i>
+                    </a>
+                  </li>
+                </ul>
+                <div class="col-6 list-unstyled pt-1">
+                  <h6 class="m-0 ">Realizado por:</h6>
+                  <span> Enrique Franco Briones Mantilla                    
+                  </span>
+                  <span> (c) Ingenieria Web</span>
+                </div>
+              </div>
+            </div>
         </footer>
     </body>
 </html>
