@@ -6,29 +6,115 @@
     <title>Laboratorio de Ingenieria Web 2021</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c6958c3964.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/estilos/estilopersonal.css">
   </head>
-  <body id="entero">
-    <header id="principal">
-      <h1>Website Practices</h1>
+  <body>
+    <header>
+      <header class="navbar navbar-dark bg-primary">
+      <a href="index.html">
+        <i class="fas fa-home fa-2x"> My Website</i>
+      </a>
     </header>
-    <nav id="navegacion">
-      <ul>
-        <li><a href="home.html"> <strong>HOME</strong> </a></li>
-        <li><a href="about.html"><strong>ABOUT</strong></a> </li>
-        <li><a href="contact.html"><strong>CONTACT</strong></a></li>
+    <nav class="navbar navbar-light bg-light">
+      <ul id="navegacion">
+        <li><a  class=" p-1 btn btn-outline-success " type="submit" href="home.html"> <strong>HOME</strong> </a></li>
+        <li><a  class=" p-1 btn btn-outline-success" href="about.html"><strong>ABOUT</strong></a> </li>
+        <li><a  class=" p-1 btn btn-outline-success" href="contact.html"><strong>CONTACT</strong></a></li>
       </ul>
     </nav>  
-    <section id="banner">
-      <img src="/imagenes/banner.jpg" alt="banner">
-      <div id="contenedor">
-        <h2> Aprendiendo a desarrollar páginas web</h2>
-        <span> Empresariales </span>
+   <section>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
+        <div  class="carousel-inner">
+          <div class="carousel-item active">
+            <img  src="/imagenes/banner.jpg" class="d-block w-100" alt="banner">
+            <div class="carousel-caption d-md-block">
+              <h3> Aprendiendo a desarrollar páginas web</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/imagenes/ceviche.jpg" class="d-block w-100"  alt="imagen">
+            <div class="carousel-caption d-md-block">
+              <h3> Aprendiendo a cocinar sanamente</h3>
+            </div>
+          </div>
+         </div>
+        <a href="#carouselExampleCaptions" class="carousel-control-prev" role="button"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a href="#carouselExampleCaptions" class="carousel-control-next" role="button"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>  
       </div>
-    </section>
-    <footer id="pagina">
-      <h3> (c) Enrique Franco Briones Mantilla</h3>
+  </section>
+  <section id="Cartas">
+    <div class="card" >
+      <img src="/imagenes/cripto.jpg " alt="bitcoin">
+      <div class="card-body">
+        <h5 class="card-title">Criptomoneda</h5>
+        <p class="card-text">
+          Una criptomoneda es un activo digital que emplea un 
+          cifrado criptográfico para garantizar su titularidad y asegurar la integridad de las transacciones, 
+          y controlar la creación de unidades adicionales
+        </p>
+        <a href="#" class="btn btn-primary">Ir al mercado</a>
+      </div>
+    </div>
+    <div class="card" >
+      <img src="/imagenes/viajes.jpg " alt="viajes">
+      <div class="card-body">
+        <h5 class="card-title">Viajes</h5>
+        <p class="card-text">
+          Además del atractivo de conocer lugares magníficos, viajar también te proporciona la oportunidad de conocer otras personas. 
+          Ver cómo viven y conocer otra forma de hacer las cosas. 
+        </p>
+        <a href="#" class="btn btn-secondary">Ir de viaje</a>
+      </div>
+    </div>
+    <div class="card" >
+      <img src="/imagenes/Vida_Sana.jpg" alt="saludable">
+      <div class="card-body">
+        <h5 class="card-title">Vida saludable</h5>
+        <p class="card-text">
+          Para mantener el cuerpo y mente de una manera adecuada tanto lo relacionado con la salud mental, la alimentación, la actividad física, 
+          la prevención de la salud, el trabajo, la relación con el medio ambiente y la actividad social.
+        </p>
+        <a href="#" class="btn btn-success">Ir de viaje</a>
+      </div>
+    </div>
+  </section>
+    <footer class="bg-dark text-white ">
+        <div class="container-fluid">
+          <div class="row">
+            <ul class="col-6 list-unstyled">
+              <li class="font-weight-bold "> Redes Sociales</li>
+              <li class="d-flex justify-content-around m-1">
+                <a href="#" class="text-reset">
+                  <i class="fab fa-facebook fa-3x"></i>
+                </a>
+                <a href="#" class="text-reset">
+                  <i class="fab fa-twitter fa-3x"></i>
+                </a>
+                <a href="#" class="text-reset">
+                  <i class="fab fa-reddit fa-3x"></i>
+                </a>
+                <a href="#" class="text-reset">
+                  <i class="fab fa-instagram fa-3x"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="col-6 list-unstyled pt-1">
+              <h6 class="m-0 ">Realizado por:</h6>
+              <span> Enrique Franco Briones Mantilla </span>
+            </div>
+          </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </body>
 </html>
 
