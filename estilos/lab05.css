@@ -1,0 +1,77 @@
+section{
+    padding-top: 2px;
+   background-color: rgb(172, 235, 196);
+   height: 20em;
+}
+h2{
+    text-align: center;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+.form1{ 
+    float: left;
+    width: 40%;
+    margin-left: 20%;
+}
+span{
+    border: black 1px solid;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    padding: 8px;
+    background-color: rgb(73, 73, 240);
+    color: white;
+    margin-bottom: 5px;
+    font-size: 100%;
+}
+input{
+    width: 60%;
+    padding: 10px;
+    border: brown solid 1px;
+}
+.botones{
+  float: right;
+  width: 40%;
+  height: 45px;
+}
+button{
+    width: 20%;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    border: white solid 1px;
+}
+
+#extraer{
+    background-color: orange;
+}
+#extraer:active{
+    background-color:rgb(228, 185, 105);
+}
+#colorear{
+    background-color:brown ;
+}
+#colorear:active{
+background-color: rgb(151, 66, 66);
+}
+.form2 input{
+    width: 40%;
+}
+.form2{
+    margin-top: 10px;
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+}
+.form3 input{
+    width: 40%;
+}
+.form3{
+    margin-top: 10px;
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+}
+.form3 span{
+    background-color: brown;
+}
