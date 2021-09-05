@@ -46,6 +46,31 @@ window.onload = function() {
         let month = año.toLocaleString('default', { month: 'long' });
         document.getElementById("mes").value=month;
     }; 
+
+    //Cambiando los colores de los elementos
+    let band=1;
+    document.getElementById("colorear").onclick = function() {
+        let otro =document.getElementsByClassName("color");
+        let otro2 =document.getElementsByClassName("color2");
+        let i;
+        if(band){
+            //De rojo a azul
+            document.getElementById("colorear").style.background="red";
+            for (i = 0; i < otro.length; i++) {
+            otro[i].style.backgroundColor = "red";}
+            for (i = 0; i < otro2.length; i++) {
+                otro2[i].style.backgroundColor = "blue";}
+            band=0;
+        }else{
+            //De azul a rojo
+            document.getElementById("colorear").style.background="blue";
+            for (i = 0; i < otro.length; i++) {
+                otro[i].style.backgroundColor = "blue";}
+            for (i = 0; i < otro2.length; i++) {
+                    otro2[i].style.backgroundColor = "red";}  
+            band=1;
+        }
+    };
 };   
 
 
